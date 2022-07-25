@@ -13,4 +13,6 @@ JOIN
 ON
   art.artista_id = alb.artista_id
 GROUP BY
-  seg.artista_id, alb.album;
+  seg.artista_id, alb.album
+ORDER BY
+  seguidores DESC, art.artista, alb.album;
